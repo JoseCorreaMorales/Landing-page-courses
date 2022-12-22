@@ -1,0 +1,119 @@
+@media screen and (max-width: 768px) {
+    :root {
+        --height-shape: 12em;
+        --padding-container: 120px 0;
+    }
+
+    .hero__container {
+        padding: 80px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    /* about */
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 30px;
+    }
+
+    .about__course {
+        width: 100%;
+    }
+
+    .about__picture {
+        order: -1;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    /* cards */
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "card1       ."
+            "card1  card2"
+            "card3  card2"
+            "card3   card4"
+            " .      card4";
+    }
+
+
+    /* courses */
+
+    .course__about {
+        grid-column: 1/5;
+    }
+
+    .course__picture {
+        grid-column: 2/-1;
+    }
+
+
+    .course__about--left {
+        grid-column: -1/2;
+    }
+
+    .course__picture--right {
+        grid-column: 1/5;
+    }
+
+
+    /* footer */
+    .footer__contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .footer__texts{
+        order: 1;
+        --align-title: center;
+    }
+    .footer__social{
+        justify-content: space-evenly;
+    }
+
+    .footer__img{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    :root{
+        --padding-container: 80px 0;
+    }
+
+    .cta{
+        display: block;
+    }
+
+    .card__container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4";
+    }
+
+    .course__about{
+        grid-column: 1/-1;
+    }
+
+    .course__picture{
+        display: none;
+    }
+
+    .course {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        --padding-container: 50px 0;
+    }
+}

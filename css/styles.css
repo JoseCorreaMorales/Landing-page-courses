@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+
+/* ----------------------------------------------------------------General styles */
+:root {
+    --color-primary: #F9A826;
+    --color-title: #000;
+    --align-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --color-btn: var(--color-primary);
+    --text-btn: #fff;
+    --padding-btn: 20px 35px;
+    --height-shape: 18em;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /*  background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px; */
+    background-color: #e5e5f7;
+    opacity: 1  ;
+    background-image: radial-gradient(#F9A826 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
+    background-size: 17px 17px;
+}
+
+.container {
+    width: var(--width-container);
+    margin: 0 auto;
+    padding: var(--padding-container);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.71);
+    border-radius: 20px;
+}
+
+/* ------------------------------------------------------------------------------HERO styles */
+.hero {
+    height: 100vh;
+    min-height: 500px;
+    /* prevenir el modo landscape en mobile */
+    position: relative;
+    --padding-container: 0;
+}
+
+.hero__container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 3fr;
+    /* divir las columnas en fracciones */
+    place-items: center;
+    gap: 20px;
+    /* espaciado */
+}
+
+.hero__img {
+    width: 95%;
+}
+
+.hero__title {
+    font-size: 4rem;
+}
+
+.hero__copy {
+    font-size: 1.2rem;
+    margin: 25px 0;
+}
+
+.hero__cta {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-btn);
+    color: var(--text-btn);
+    padding: var(--padding-btn);
+    text-align: center;
+   
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: var(--height-shape);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+/* ------------------------------------------ MAIN section -----------------------------------------------------------*/
+
+.main {
+    background-color: #fff;
+}
+
+/* ---------------------------------------------Encabezados */
+.title {
+    font-size: 2.5rem;
+    text-align: var(--align-title);
+    color: var(--color-title);
+}
+
+.title--border::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
+.cta {
+    display: inline-block;
+    background-color: var(--color-btn);
+    color: var(--text-btn);
+    padding: var(--padding-btn);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* ......................DEV SESCTION ..................*/
+.dev {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    --padding-container: 40px 0 65px;
+}
+
+.dev__container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.dev__name {
+    margin: 20px 0;
+}
+
+.dev__tag {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.dev__paragraph {
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    color: #615a5a;
+}
+
+.dev__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ......................ABOUT SESCTION ..................*/
+.about {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+}
+
+.about__course {
+    width: 90%;
+}
+
+.about_paragraph{
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.about__img {
+    width: 95%;
+}
+
+.about__picture {
+    text-align: center;
+}
+
+/* ........................CARDS section ......................*/
+.card {
+    background-color: #ece8e8;
+}
+
+.card__copy {
+    margin-top: 20px;
+}
+
+.card__container {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas:
+        ".      card1       ."
+        "card2  card1       card3"
+        "card2  card4       card3"
+        /*  "card2  card4       card3" */
+        ".      card4       .";
+}
+
+.card__item {
+    padding: 20px;
+    background: #fff;
+    border-top: 5px solid var(--color-primary);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-height: 500px; */
+}
+
+.card__img {
+    background: var(--color-primary);
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--color-primary);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+.card__title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.card__paragraph {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card__item:nth-last-of-type(1) {
+    grid-area: card1;
+}
+
+.card__item:nth-last-of-type(2) {
+    grid-area: card2;
+}
+
+.card__item:nth-last-of-type(3) {
+    grid-area: card3;
+}
+
+.card__item:nth-last-of-type(4) {
+    grid-area: card4;
+}
+
+/* -----------------------------------------COURSE section ------------------------------ */
+
+    .course {
+        --color-title: #fff;
+        --color-btn: #fff;
+        --text-btn: #000000;
+        color: var(--color-title);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        /*  align-items: center; */
+
+    }
+
+.course__picture {
+    margin: 0;
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+}
+
+
+.course__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course__about {
+    z-index: 100;
+    grid-column: 1/4;
+    grid-row: 2/-2;
+    align-self: center;
+    width: 97%;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    background-color: var(--color-primary);
+}
+
+
+
+.course__picture--right {
+    margin: 0;
+    grid-column: 1/4;
+    grid-row: 1/-1;
+}
+
+.course__about--left {
+    z-index: 100;
+    grid-column: -1/3;
+    grid-row: 2/-2;
+    align-self: center;
+    width: 97%;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    background-color: var(--color-primary);
+}
+
+
+
+/* -----------------------------------FOOTER--------------------------------------------- */
+.footer {
+    position: relative;
+    --padding-cotainer: 160px 0 50px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.footer__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+
+}
+
+.footer__paragraph {
+    font-weight: 300;
+    margin: 1.3rem 0;
+}
+
+.footer__pictute {
+    margin: 0;
+ 
+}
+
+.footer__img {
+    width: 100%;
+}
+
+
+.footer__social {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__icon {
+    width: 30px;
+}
+
+
+.footer__link:hover {
+    background-color: #e0d6d6;
+}
+
+.footer__copyright {
+    padding-top: 3rem;
+    border-top: 1.5px solid #615a5a;
+    text-align: center;
+}
+
+.footer__copyright::after {
+    content: " jose.correax@gmail.com";
+}
