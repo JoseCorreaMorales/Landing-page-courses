@@ -42,7 +42,6 @@ The landing page is mobile-optimized, which means it automatically adapts to the
 
 * [SVG source ](https://www.manypixels.co/gallery)
 
-[SVG free resourse](https://undraw.co/illustrations)
+* [SVG free resourse](https://undraw.co/illustrations)
 
-
-https://undraw.co/illustrations
+* [SVG illustrations](https://undraw.co/illustrations)
