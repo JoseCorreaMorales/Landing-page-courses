@@ -1,7 +1,7 @@
 # Landing page courses
  ## Introduction
 
-
+This repository contains the source code for an online course landing page. The landing page is designed to be engaging and user-friendly, and to provide all the information that visitors need to enroll in a course.
 
 
 ## Technologies
@@ -32,7 +32,8 @@
 
 The landing page is mobile-optimized, which means it automatically adapts to the screen size of the visitor's device. This ensures that visitors can access the landing page and navigate it easily, regardless of the device they are using.
 
-
+# Design
+The landing page is designed to be engaging and user-friendly. The design uses colors and fonts that are easy to see and read. The landing page is also optimized for mobile devices, making it easy for visitors to access it from their smartphones and tablets.
 
 ## Resourses
 
