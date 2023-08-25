@@ -1,4 +1,4 @@
-# Landing page courses
+# 📙📚 Landing page courses 📑
  ## Introduction
 
 This repository contains the source code for an online course landing page. The landing page is designed to be engaging and user-friendly, and to provide all the information that visitors need to enroll in a course.
@@ -9,17 +9,19 @@ This repository contains the source code for an online course landing page. The 
 * HTML
 * CSS
 
-<!-- JavaScript Icon -->
 <p align="center">
-
   <img src="https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Icon" />
-   <img src="https://img.shields.io/badge/CDN-brightgreen?style=for-the-badge" alt="CDN Icon" />
+  <img src="https://img.shields.io/badge/CDN-brightgreen?style=for-the-badge" alt="CDN Icon" />
   <img src="https://img.shields.io/badge/-HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Icon" />
-  
+   <img src="https://img.shields.io/badge/-Grid-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Grid Icon" />
   <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Icon" />
   <img src="https://img.shields.io/badge/-Normalize-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Normalize Icon" />
-   <img src="https://img.shields.io/badge/-SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white" alt="SVG Icon" />
+  <img src="https://img.shields.io/badge/-SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white" alt="SVG Icon" />
+  <img src="https://img.shields.io/badge/-Flexbox-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Flexbox Icon" />
+ 
 </p>
+
+
 
 ## Features
 * Clean and modern design
